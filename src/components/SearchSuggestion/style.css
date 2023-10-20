@@ -1,0 +1,30 @@
+.list-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+.arrow {
+  width: 25px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+.desc {
+  margin: 10px 0px;
+
+  color: #4F4F4F;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+@media (max-width: 767px) {
+  .arrow {
+    width: 20px;
+  }
+  .desc {
+    font-size: 16px;
+  }
+}
+  

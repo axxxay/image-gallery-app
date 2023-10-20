@@ -1,0 +1,130 @@
+.image-item {
+    width: 30%;
+    display: inline-block;
+    box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.06);
+    margin-bottom: 25px;
+    border-radius: 8px;
+}
+
+.image-item-dark {
+    background-color: #141414;
+}
+
+.image-thumbnail {
+    width: 100%;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.user-details-con {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px;
+}
+
+.profile-con {
+    display: flex;
+    align-items: center;
+}
+
+.user-image {
+    width: 39px;
+    height: 39px;
+    border-radius: 50%;
+    margin-right: 8px;
+}
+
+.user-name-con {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.name {
+    color: #4F4F4F;
+    font-family: Montserrat;
+    font-size: 8px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin: 0px;
+    margin-bottom: 4px;
+}
+
+.name-dark {
+    color: #E5E5E5;
+}
+
+.username {
+    color: #A7A7A7;
+    font-family: Poppins;
+    font-size: 7px;
+    font-style: italic;
+    font-weight: 600;
+    line-height: normal;
+    margin: 0px;
+}
+
+.like-con {
+    display: flex;
+    align-items: center;
+    margin-right: 8px;
+}
+
+.like-icon {
+    font-size: 13px;
+    color: #4F4F4F;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.likes-text {
+    color: #4F4F4F;
+    font-family: Montserrat;
+    font-size: 11px;
+    font-style: normal;
+    font-weight: bolder;
+    line-height: normal;
+    margin: 0px;
+}
+
+.likes-text-dark {
+    color: #E5E5E5;
+}
+
+.trigger-button {
+    padding: 0px;
+    background-color: transparent;
+    outline: none;
+    border: 0px;
+    cursor: pointer;;
+}
+
+
+@media screen and (max-width: 768px) {
+    .image-item {
+        width: 49%;
+    }
+    .user-image {
+        width: 20px;
+        height: 20px;
+    }
+    .name {
+        font-size: 7px;
+        margin-bottom: 3px;
+    }
+    .username {
+        font-size: 6px;
+    }
+    .like-con {
+        margin-right: 0px;
+    }
+    .like-icon {
+        margin-right: 3px;
+        font-size: 8px;
+    }
+    .likes-text {
+        font-size: 7px;
+    }
+}
