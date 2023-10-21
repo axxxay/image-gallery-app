@@ -12,6 +12,7 @@
 
 .popup-overlay  {
     z-index: 1001!important;
+    padding: 20px 0px;
     overflow-y: auto;
 }
 
@@ -19,7 +20,6 @@
     width: 70%;
     padding: 0px;
     border-radius: 16px;
-    /* border: 1px solid #E5E5E5; */
     background: #FFF;
     position: relative;
     border: 0px;
@@ -406,9 +406,9 @@
         margin-right: 10px;
         margin-bottom: 8px;
     }
-    .tags-list {
+    /* .tags-list {
         margin-bottom: 13px;
-    }
+    } */
     .modal-user-details-con {
         width: 100%;
         justify-content: space-between;
@@ -416,5 +416,11 @@
     .modal-profile-con {
         width: 100%;
         justify-content: space-between;
+    }
+    .modal-trigger-button {
+        top: -11px;
+        right: -11px;
+        width: 30px;
+        height: 30px;
     }
 }

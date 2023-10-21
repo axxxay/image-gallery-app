@@ -1,6 +1,7 @@
 import {BiSearch} from 'react-icons/bi'
 import {RxHamburgerMenu} from 'react-icons/rx'
 import { useContext, useState } from 'react';
+import {BsSun, BsMoonStars} from 'react-icons/bs'
 import Switch from '@mui/material/Switch';
 import { SearchContext } from '../../contexts/SearchContext';
 import SearchSuggestion from '../SearchSuggestion';
@@ -88,11 +89,14 @@ const NavBar = () => {
             </ul>
             <div className='nav-theme-toggle'>
                 <div className='theme-toggle-con'>
-                  <label className={`${theme && 'theme-toggle-text-dark'} theme-toggle-text`} htmlFor='toggletheme' >Dark Mode</label>
+                  <label className={`${theme && 'theme-toggle-text-dark'} theme-toggle-text`} htmlFor='toggletheme' >{theme ? "Light Mode" : "Dark Mode"}</label>
                   <Switch {...label} size="small" checked={theme} onClick={handleTheme} id='toggletheme' label="some" />
                 </div>
             </div>
             <div className='nav-con-mobile'>
+                {
+                  theme ? <BsSun onClick={handleTheme} className='dark-icon theme-icon' /> : <BsMoonStars onClick={handleTheme} className='theme-icon' />
+                }
                 <BiSearch className='nav-search-icon' />
                 <RxHamburgerMenu className='nav-search-icon' />
             </div>

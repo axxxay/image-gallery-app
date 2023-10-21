@@ -141,6 +141,15 @@
     color: #ffffff;
 }
 
+.theme-icon {
+    font-size: 18px;
+    margin-right: 6px;
+}
+
+.dark-icon {
+    color: #a3a2a2;
+}
+
 @media screen and (max-width: 768px) {
     .nav-bar {
         width: 100%;
